@@ -48,6 +48,7 @@ if (isset($_POST['addProductButton'])) {
     <!-- Bootstrap CSS v5.0.2 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -67,34 +68,14 @@ if (isset($_POST['addProductButton'])) {
             <input type="number" class="form-control" id="exampleFormControlInput1" min="1" max="100">
         </div>
 
-
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Type Switcher
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Disc</a>
-                <a class="dropdown-item" href="#">Book</a>
-                <a class="dropdown-item" href="#">Furniture</a>
-            </div>
-        </div>
-
-
-
-        <div class="dropdown show">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown link
-            </a>
-
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-        </div>
-
+        <label for="switcher" id="typeSwitcher">Type Switcher: </label>
+        <select name="typeSwitcher" id="typeSwitcher">
+            <option value="">Choose Type Switcher</option>
+            <option value="disc">Disc</option>
+            <option value="book">Book</option>
+            <option value="furniture">Furniture</option>
+        </select>
+        <br><br>
 
 
         <div class="form-group">
@@ -103,6 +84,7 @@ if (isset($_POST['addProductButton'])) {
         </div>
     </form>
     </div>
+
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
