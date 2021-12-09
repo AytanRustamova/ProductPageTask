@@ -22,7 +22,16 @@ include("class/Product.php");
 </head>
 
 <body>
-    <h1 class="m-3">Product-list</h1>
+    <div class="header d-flex justify-content-between">
+        <h1 class="m-3">Product-list</h1>
+        <div class="headerButton d-flex">
+            <button type="button" class="headButton btn btn-primary">Add</button>
+            <button type="button" class="headButton btn btn-secondary">Mass Delete</button>
+        </div>
+
+    </div>
+
+
     <div class="d-flex">
         <div class="card m-3" style="width: 18rem;">
             <div class="card-body">

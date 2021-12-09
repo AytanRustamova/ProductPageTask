@@ -12,6 +12,9 @@ select{
     margin: 10px 5px;
 }
 
-typeSwitcher{
+.typeSwitcher{
     margin: 10px 5px;
+}
+.header button{
+    margin: 20px 20px;
 }
