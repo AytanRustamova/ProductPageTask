@@ -25,13 +25,11 @@ include("class/Product.php");
     <div class="header d-flex justify-content-between">
         <h1 class="m-3">Product-list</h1>
         <div class="headerButton d-flex">
-            <button type="button" class="headButton btn btn-primary">Add</button>
-            <button type="button" class="headButton btn btn-secondary">Mass Delete</button>
+            <a href="add-product.php"  class="headButton btn btn-primary">Add</a>
+            <a  class="headButton btn btn-secondary">Mass Delete</a>
         </div>
 
     </div>
-
-
     <div class="d-flex">
         <div class="card m-3" style="width: 18rem;">
             <div class="card-body">
