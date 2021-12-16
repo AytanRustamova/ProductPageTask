@@ -11,16 +11,20 @@ if (isset($_POST['addProductButton'])) {
     $addProductPrice = $_POST['productPrice'];
     $addProductType = $_POST['typeSwitcher'];
     $addProductSize = $_POST['size'];
- 
+    echo $addProductType;
+    echo $addProductSku;
+    echo $addProductName;
+    echo $addProductPrice;
+    echo $addProductSize;
 
     $wasSuccessful = $product->addProduct($addProductSku, $addProductName, $addProductPrice, $addProductType, $addProductSize);
     
-    if ($wasSuccessful) {
-        header("Location: product.php");
-    } else {
-        echo 'Something went wrong. Please try again later';
-        return false;
-  }
+//     if ($wasSuccessful) {
+//         header("Location: product.php");
+//     } else {
+//         echo 'Something went wrong. Please try again later';
+//         return false;
+//   }
 }
 
 ?>
@@ -49,9 +53,9 @@ if (isset($_POST['addProductButton'])) {
         </div>
         <div class="form-group">
             <label for="exampleFormControlInput1">Product Name</label>
+            <div class="form-group">
             <input type="text" class="form-control" id="exampleFormControlInput1" name="productName">
         </div>
-        <div class="form-group">
             <label for="exampleFormControlInput1">Product Price</label>
             <input type="number" class="form-control" id="exampleFormControlInput1" min="1" max="100"
                 name="productPrice">

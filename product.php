@@ -1,8 +1,13 @@
 <?php
 
 include("class/Product.php");
+include("includes/config.php");
+
+
+$product = new Product($con);
 
 ?>
+
 
 
 <!doctype html>
@@ -31,63 +36,17 @@ include("class/Product.php");
 
     </div>
     <div class="d-flex">
-        <div class="card m-3" style="width: 18rem;">
-            <div class="card-body">
-                <div class="d-flex justify-content-between">
-                    <h5 class="card-title">Card title</h5>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault"></label>
-                    </div>
-                </div>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
 
-        <div class="card m-3" style="width: 18rem;">
-            <div class="card-body">
-                <div class="d-flex justify-content-between">
-                    <h5 class="card-title">Card title</h5>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault"></label>
-                    </div>
-                </div>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
-
-        <div class="card m-3" style="width: 18rem;">
-            <div class="card-body">
-                <div class="d-flex justify-content-between">
-                    <h5 class="card-title">Card title</h5>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault"></label>
-                    </div>
-                </div>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
-
+    <?php 
+    
+    echo $product->getProductList()
+    
+    
+    ?>
 
     </div>
 
+  
 
 
     <!-- Bootstrap JavaScript Libraries -->
